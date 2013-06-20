@@ -15,7 +15,7 @@ inputs: live code, libs, data, css, kb, mouse, osc, camera
 
 visualisable dependent/computed properties
 
-primary libs (demos with): d3, paper.js, three.js, two.js, Timbre.js
+primary libs (demos with): d3, paper.js, three.js, two.js, Timbre.js, KineticJS
 
 outputs: canvas, svg, webaudio, data
 
@@ -49,9 +49,6 @@ embed for computed properties?
 require()
 
 modes? paused/step/play
-
-tabs vs sections
-
 onkeyup, onchange, onreload
 
 current: paper.js canvas initial instant unpause
@@ -62,12 +59,30 @@ current: paper.js canvas initial instant unpause
 
 
 
+
 Tools to use
 ------------
 require.js
 bower
 grunt
 yeoman
+
+Examples
+--------
+
+<!-- require('http://somelocalproject.dev', 'onPlay') // can put in onPlay for now -->
+
+### livecode
+
+	stu.onLoad  = function() {
+		require('http://github.com.dev/whatever/huh.js');
+	}
+	stu.onTick  = function() {}
+	stu.onPlay  = function() {}
+	stu.onPause = function() {}
+	stu.onData  = function() {}
+
+	// stu.onCode  = function() {}
 
 
 Inspired by
